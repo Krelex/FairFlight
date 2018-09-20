@@ -1,0 +1,9 @@
+# IO.Swagger.Model.CarSearchResponse
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Results** | [**List&lt;CarSearchResult&gt;**](CarSearchResult.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

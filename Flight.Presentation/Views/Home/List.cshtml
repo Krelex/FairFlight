@@ -1,0 +1,12 @@
+﻿@model Flight.Model.FlightSearchResponeDTO
+
+
+@{
+    ViewBag.Title = "List of Flights :";
+}
+<h1 class="">@ViewBag.Title</h1>
+<h3>@ViewBag.Message</h3>
+
+<div>
+    @Html.Partial("FlightTablePartialView", Model)
+</div>

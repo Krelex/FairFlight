@@ -1,0 +1,12 @@
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\bin\Debug\Flight.DAL.dll.config
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\bin\Debug\Flight.DAL.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\bin\Debug\Flight.DAL.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\bin\Debug\EntityFramework.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\bin\Debug\Flight.Model.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\bin\Debug\Flight.Model.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\bin\Debug\EntityFramework.xml
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\obj\Debug\Flight.DAL.csprojResolveAssemblyReference.cache
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\obj\Debug\Flight.DAL.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.DAL\obj\Debug\Flight.DAL.pdb

@@ -1,0 +1,38 @@
+﻿@model Flight.Model.FlightSearchResponeDTO
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+@Html.Partial("SearchPartialView")
+</div>
+
+@if (Model != null)
+{
+    <div>
+        @Html.Partial("FlightTablePartialView", Model)
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Početak rada :</h2>
+        <p>
+            <ul style="padding-left: 20px;">
+                <li>Low fare flight aplikacija sluzi za pretrazivanje nisko tarifnih letova.</li>
+                <li>Ispunite prazna polja za pocetak pretrage.</li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h2>Kako pretraživati :</h2>
+        <p>
+            <ul style="padding-left: 20px;">
+                <li>Sva polja osim datuma povratka.</li>
+                <li>Polazišni i Odredišni aerodrom pretražuju se po IATA sirfi aerodroma (<a href="https://hr.wikipedia.org/wiki/Me%C4%91unarodna_udruga_za_zra%C4%8Dni_prijevoz">Opširnije</a>).</li>
+                <li>Maksimalan broj osoba za pretragu je 9.</li>
+            </ul>
+        </p>
+    </div>
+</div>
+

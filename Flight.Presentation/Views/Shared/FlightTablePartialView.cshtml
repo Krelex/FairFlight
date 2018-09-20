@@ -1,0 +1,45 @@
+﻿@model Flight.Model.FlightSearchResponeDTO
+@{ 
+    int count = 1;
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td class="text-center">Polazni aerodrom</td>
+                    <td class="text-center">Odredisni aerodrom</td>
+                    <td class="text-center">Datum Polaska</td>
+                    <td class="text-center">Datum Povratka</td>
+                    <td class="text-center">Broj presjedanja Polazno</td>
+                    <td class="text-center">Broj presjedanja Povratno</td>
+                    <td class="text-center">Broj putnika</td>
+                    <td class="text-center">Ukupna Cijena</td>
+                    <td class="text-center">Valuta</td>
+                </tr>
+            </thead>
+            <tbody>
+                    @foreach (var item in Model.Results)
+                    {
+                        <tr>
+                            <td class="text-center">@count</td>
+                            <td class="text-center">@item.OutboundOriginIATA()</td>
+                            <td class="text-center" >@item.OutboundDestinationIATA()</td>
+                            <td class="text-center">@Model.DepartureDate.ToShortDateString()</td>
+                            @if (Model.ReturnDate != null) {<td class="text-center">@Model.ReturnDate.Value.ToShortDateString()</td> }
+                            else {<td class="text-center">--</td> }
+                            <td class="text-center"> @item.FlightNumbersOutbound()</td>
+                            @if (Model.ReturnDate != null) { <td class="text-center">@item.FlightNumbersInbound()</td> }
+                            else { <td class="text-center">--</td> }
+                            <td class="text-center">@Model.PassangerNumber()</td>
+                            <td class="text-center">@item.Fare.TotalPrice</td>
+                            <td class="text-center">@Model.Currency</td>
+                        </tr>
+                        count++;
+                    }
+            </tbody>
+        </table>
+    </div>
+</div>
