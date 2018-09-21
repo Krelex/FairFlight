@@ -16,7 +16,7 @@ namespace Flight.Service.Concrete
         private IFlightRepository _iFlightServiceRepository;
         private IDefaultApi _ApiClient;
 
-        //const string apiKey = "9qt9J2AStfgR54huLNS0RRiaffAOtE8D";
+        //Here place your api key.
         string apiKey = ConfigurationManager.AppSettings["apiKey"];
 
 

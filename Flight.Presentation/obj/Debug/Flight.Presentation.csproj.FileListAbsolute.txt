@@ -107,3 +107,5 @@ C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\RestSh
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\obj\Debug\Flight.Presentation.csprojResolveAssemblyReference.cache
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\obj\Debug\Flight.Presentation.dll
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\obj\Debug\Flight.Presentation.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\log4net.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\log4net.xml

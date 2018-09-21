@@ -7,6 +7,10 @@ using Flight.Presentation.Models;
 using Flight.Service.Abstraction;
 using Flight.Model;
 using System.Configuration;
+using log4net;
+using System.Reflection;
+
+[assembly: log4net.Config.XmlConfigurator]
 
 namespace Flight.Presentation.Controllers
 {
@@ -15,6 +19,7 @@ namespace Flight.Presentation.Controllers
 
         private readonly IFlightService _service;
 
+
         public HomeController(IFlightService service)
         {
             _service = service;
@@ -22,7 +27,7 @@ namespace Flight.Presentation.Controllers
 
         public ActionResult Index()
         {
-
+            
             ViewBag.Currency = _service.GetCurrency();
 
             return View();
