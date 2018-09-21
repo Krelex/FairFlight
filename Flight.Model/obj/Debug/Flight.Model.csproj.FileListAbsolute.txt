@@ -2,3 +2,4 @@ C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Model\bin\Debug\Flight.
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Model\bin\Debug\Flight.Model.pdb
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Model\obj\Debug\Flight.Model.dll
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Model\obj\Debug\Flight.Model.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Model\obj\Debug\Flight.Model.csprojResolveAssemblyReference.cache

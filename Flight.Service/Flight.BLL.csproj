@@ -55,7 +55,6 @@
     <Compile Include="Concrete\FlightService.cs" />
     <Compile Include="Mapper\AutomapperProfile.cs" />
     <Compile Include="Mapper\DateTimeTypeConverter.cs" />
-    <Compile Include="Mapper\ITypeConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
