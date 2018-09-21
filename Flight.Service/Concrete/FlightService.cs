@@ -54,29 +54,44 @@ namespace Flight.Service.Concrete
             return db;
         }
 
-        public FlightSearchResponeDTO GetApiRespone(FlightSearchResponeDTO respone)
+        public FlightSearchResponeDTO GetApiRespone(FlightSearchResponeDTO viewRespone)
         {
 
-            var apiRespone = _ApiClient.FlightLowFareSearch(apiKey, respone.Origin, respone.Destination, respone.DepartureDate.ToString("yyyy-MM-dd"),
-                                                            respone.ReturnDate?.ToString("yyyy-MM-dd"), null, null, respone.Adults, respone.Childs, null, null, null, null,
-                                                            null, respone.Currency);
+            var apiRespone = _ApiClient.FlightLowFareSearch(apiKey, viewRespone.Origin, viewRespone.Destination, viewRespone.DepartureDate.ToString("yyyy-MM-dd"),
+                                                            viewRespone.ReturnDate?.ToString("yyyy-MM-dd"), null, null, viewRespone.Adults, viewRespone.Childs, null, null, null, null,
+                                                            null, viewRespone.Currency);
 
-            var resp = AutoMapper.Mapper.Map<FlightSearchResponeDTO>(apiRespone);
+            var dbRespone = AutoMapper.Mapper.Map<FlightSearchResponeDTO>(apiRespone);
 
-            resp.Adults = respone.Adults;
-            resp.Childs = respone.Childs;
-            resp.Destination = respone.Destination;
-            resp.Origin = respone.Origin;
-            resp.DepartureDate = respone.DepartureDate;
-            resp.ReturnDate = respone.ReturnDate;
+            dbRespone = ViewToDbModelMapping(viewRespone, dbRespone);
+            
+            //resp.Adults = viewRespone.Adults;
+            //resp.Childs = viewRespone.Childs;
+            //resp.Destination = viewRespone.Destination;
+            //resp.Origin = viewRespone.Origin;
+            //resp.DepartureDate = viewRespone.DepartureDate;
+            //resp.ReturnDate = viewRespone.ReturnDate;
 
-            return resp;
+            return dbRespone;
         }
 
         public List<CurrencyModel> GetCurrency()
         {
 
             return _iFlightServiceRepository.GetCurrency();
+        }
+
+        private static FlightSearchResponeDTO ViewToDbModelMapping(FlightSearchResponeDTO ViewRespone , FlightSearchResponeDTO DatabaseRespone )
+        {
+
+            DatabaseRespone.Adults = ViewRespone.Adults;
+            DatabaseRespone.Childs = ViewRespone.Childs;
+            DatabaseRespone.Destination = ViewRespone.Destination;
+            DatabaseRespone.Origin = ViewRespone.Origin;
+            DatabaseRespone.DepartureDate = ViewRespone.DepartureDate;
+            DatabaseRespone.ReturnDate = ViewRespone.ReturnDate;
+
+            return DatabaseRespone;
         }
     }
 }
