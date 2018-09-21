@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Flight.Presentation.Models;
 using Flight.Service.Abstraction;
 using Flight.Model;
+using System.Configuration;
 
 namespace Flight.Presentation.Controllers
 {
@@ -21,6 +22,7 @@ namespace Flight.Presentation.Controllers
 
         public ActionResult Index()
         {
+
             ViewBag.Currency = _service.GetCurrency();
 
             return View();

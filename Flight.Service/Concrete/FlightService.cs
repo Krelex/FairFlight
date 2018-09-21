@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Flight.Model;
 using Flight.DAL.Abstraction;
 using IO.Swagger.Api;
+using System.Configuration;
 
 namespace Flight.Service.Concrete
 {
@@ -15,7 +16,9 @@ namespace Flight.Service.Concrete
         private IFlightRepository _iFlightServiceRepository;
         private IDefaultApi _ApiClient;
 
-        const string apiKey = "9qt9J2AStfgR54huLNS0RRiaffAOtE8D";
+        //const string apiKey = "9qt9J2AStfgR54huLNS0RRiaffAOtE8D";
+        string apiKey = ConfigurationManager.AppSettings["apiKey"];
+
 
         public FlightService(IFlightRepository repo  ,IDefaultApi api )
         {
