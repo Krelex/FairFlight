@@ -64,13 +64,6 @@ namespace Flight.Service.Concrete
             var dbRespone = AutoMapper.Mapper.Map<FlightSearchResponeDTO>(apiRespone);
 
             dbRespone = ViewToDbModelMapping(viewRespone, dbRespone);
-            
-            //resp.Adults = viewRespone.Adults;
-            //resp.Childs = viewRespone.Childs;
-            //resp.Destination = viewRespone.Destination;
-            //resp.Origin = viewRespone.Origin;
-            //resp.DepartureDate = viewRespone.DepartureDate;
-            //resp.ReturnDate = viewRespone.ReturnDate;
 
             return dbRespone;
         }
