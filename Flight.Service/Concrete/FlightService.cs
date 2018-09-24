@@ -31,13 +31,17 @@ namespace Flight.Service.Concrete
             return _iFlightServiceRepository.Respones();
         }
 
-        public bool SaveRespone(FlightSearchResponeDTO respone)
+        public FlightSearchResponeDTO SaveRespone(FlightSearchResponeDTO respone)
         {
-            if (respone != null) _iFlightServiceRepository.SaveRespone(respone);
+            if (respone == null) throw new Exception("Error happened while saving to database.");
 
-            else return false;
+            return _iFlightServiceRepository.SaveRespone(respone);
 
-            return true;
+        }
+
+        public FlightSearchResultDTO GetResult(int id)
+        {
+            return _iFlightServiceRepository.GetResult(id);
         }
 
         public FlightSearchResponeDTO GetRespone(FlightSearchResponeDTO respone)

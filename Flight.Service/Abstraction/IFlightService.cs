@@ -13,7 +13,9 @@ namespace Flight.Service.Abstraction
 
         FlightSearchResponeDTO GetRespone(FlightSearchResponeDTO respone);
 
-        bool SaveRespone(FlightSearchResponeDTO respone);
+        FlightSearchResultDTO GetResult(int id);
+
+        FlightSearchResponeDTO SaveRespone(FlightSearchResponeDTO respone);
 
         bool FindRespone(FlightSearchResponeDTO respone);
 

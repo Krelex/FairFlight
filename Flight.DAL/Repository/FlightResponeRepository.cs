@@ -12,30 +12,30 @@ namespace Flight.DAL.Repository
     {
         private FlightContex _contex = new FlightContex();
 
-       
-
         public FlightSearchResponeDTO GetRespone(FlightSearchResponeDTO respone)
         {
             FlightSearchResponeDTO db =  (FlightSearchResponeDTO)_contex.Respone.Where(data => data.Adults == respone.Adults && data.Childs == respone.Childs &&
                                           data.Currency == respone.Currency && data.Origin == respone.Origin &&
                                           data.ReturnDate == respone.ReturnDate && data.DepartureDate == respone.DepartureDate &&
                                           data.Destination == respone.Destination).Single();
-                return db;
+            return db;
         }
 
-        public bool SaveRespone(FlightSearchResponeDTO respone)
+        public FlightSearchResultDTO GetResult(int id)
         {
-            if(respone != null)
-            {
-                _contex.Respone.Add(respone);
-                _contex.SaveChanges();
+            FlightSearchResultDTO db = _contex.Result.Where(data => data.SearchResultId == id).Single();
 
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return db;
+        } 
+
+        public FlightSearchResponeDTO SaveRespone(FlightSearchResponeDTO respone)
+        {
+            if (respone == null) throw new Exception("");
+
+            var saveReturn = _contex.Respone.Add(respone);
+            _contex.SaveChanges();
+
+            return saveReturn;
         }
 
         public List<FlightSearchResponeDTO> Respones()

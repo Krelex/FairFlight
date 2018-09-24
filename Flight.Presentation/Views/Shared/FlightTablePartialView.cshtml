@@ -18,6 +18,7 @@
                     <td class="text-center">Broj putnika</td>
                     <td class="text-center">Ukupna Cijena</td>
                     <td class="text-center">Valuta</td>
+                    <td class="text-center">Info</td>
                 </tr>
             </thead>
             <tbody>
@@ -36,6 +37,7 @@
                             <td class="text-center">@Model.PassangerNumber()</td>
                             <td class="text-center">@item.Fare.TotalPrice</td>
                             <td class="text-center">@Model.Currency</td>
+                            <td class="text-center"><a href="~/Home/Details?ResultId=@item.SearchResultId&Currency=@Model.Currency">Više</a></td>
                         </tr>
                         count++;
                     }

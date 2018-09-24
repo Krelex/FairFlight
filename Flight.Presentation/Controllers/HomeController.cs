@@ -34,30 +34,37 @@ namespace Flight.Presentation.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(SearchViewModel search)
+        public ActionResult List(SearchViewModel search)
         {
             ViewBag.Currency =_service.GetCurrency();
-
 
             if (!ModelState.IsValid)
             {
                 return View();
             }
 
-            FlightSearchResponeDTO respone = SearchViewModelToSearchResponeModel(search);
+            var responeSearchParamters = SearchViewModelToSearchResponeModel(search);
+            FlightSearchResponeDTO respone;
 
-            if (_service.FindRespone(respone))
+            if (_service.FindRespone(responeSearchParamters))
             {
-                 respone = _service.GetRespone(respone);
+                respone = _service.GetRespone(responeSearchParamters);
             }
             else
             {
-                respone = _service.GetApiRespone(respone);
-
-                if (!_service.SaveRespone(respone)) throw new Exception("Saving to DB failed!");       
+                var ApiRespone = _service.GetApiRespone(responeSearchParamters);
+                respone = _service.SaveRespone(ApiRespone);      
             }
 
             return View("List", respone);
+        }
+
+        public ActionResult Details(int ResultId, string Currency)
+        {
+            var result = _service.GetResult(ResultId);
+            ViewBag.Currency = Currency;
+
+            return View(result);
         }
 
         [NonAction]
@@ -76,5 +83,7 @@ namespace Flight.Presentation.Controllers
 
             return SeacrhModel;
         }
+
+
     }
 }

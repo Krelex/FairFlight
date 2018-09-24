@@ -287,6 +287,7 @@
     <Content Include="Views\Shared\FlightTablePartialView.cshtml" />
     <Content Include="Views\Shared\SearchPartialView.cshtml" />
     <Content Include="Views\GlobalError\Index.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
