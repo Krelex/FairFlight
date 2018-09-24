@@ -40,7 +40,7 @@ namespace Flight.Presentation.Controllers
 
             if (!ModelState.IsValid)
             {
-                return View();
+                return View("index");
             }
 
             var responeSearchParamters = SearchViewModelToSearchResponeModel(search);
