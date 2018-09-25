@@ -1,0 +1,73 @@
+﻿@model Flight.Model.FlightSearchResultDTO
+
+@{
+    ViewBag.Title = "Details";
+    int ruta = 0;
+}
+
+<div class="row">
+    <div class="col-lg-3 ">
+        <ul class="list-group">
+            <li class="list-group-item"><h3>Cijena :</h3></li>
+            <li class="list-group-item">Cijena po osobi : @Model.Fare.PricePerAdult <span class="badge">@ViewBag.Currency</span></li>
+            <li class="list-group-item">Cijena po djetetu : @Model.Fare.PricePerChild <span class="badge">@ViewBag.Currency</span></li>
+            <li class="list-group-item">Ukupna Cijena : @Model.Fare.TotalPrice <span class="badge">@ViewBag.Currency</span></li>
+        </ul>
+        <p><a href="~/Home/Index"> > Povratak na početnu</a></p>
+        <p><a href="javascript:history.back(1)"> > Povratak na listu</a></p>
+    </div>
+    <div class="col-lg-8">
+        @foreach (var itenery in Model.Itineraries)
+        {
+            ruta++;
+
+            <div class="row">
+            <hr />
+            <h4>Ruta @ruta </h4>
+            <hr />
+            <div class="col-lg-6">
+                <label>Odlazni :</label>
+                <p>Ukupno trajanje leta : @itenery.Outbound.Duration h</p>
+                <p>Broj presjedanja : @(itenery.Outbound.Flights.Count - 1)</p>
+                @foreach (var flight in itenery.Outbound.Flights)
+                {
+                    <ul class="list-group">
+                        <li class="list-group-item">Let broj : @flight.FlightNumber</li>
+                        <li class="list-group-item">Polazni aerodrom : @flight.Origin</li>
+                        <li class="list-group-item">Vrijeme poljetanja : @flight.DepartsAt</li>
+                        <li class="list-group-item">Dolazni aerodrom : @flight.Destination</li>
+                        <li class="list-group-item">Vrijeme sljetanja : @flight.ArrivesAt</li>
+                        <li class="list-group-item">Pista broj : @flight.Aircraft</li>
+                    </ul>
+                }
+            </div>
+            <div class="col-lg-6">
+                <label>Povratni :</label>
+                @if(itenery.Inbound != null)
+                {
+                    <p>Ukupno trajanje leta : @itenery.Inbound.Duration h</p>
+                    <p>Broj presjedanja : @(itenery.Inbound.Flights.Count-1)</p>
+                    foreach (var flight in itenery.Inbound.Flights)
+                    {
+                        <ul class="list-group">
+                            <li class="list-group-item">Let broj : @flight.FlightNumber</li>
+                            <li class="list-group-item">Polazni aerodrom : @flight.Origin</li>
+                            <li class="list-group-item">Vrijeme poljetanja : @flight.DepartsAt</li>
+                            <li class="list-group-item">Dolazni aerodrom : @flight.Destination</li>
+                            <li class="list-group-item">Vrijeme sljetanja : @flight.ArrivesAt</li>
+                            <li class="list-group-item">Pista broj : @flight.Aircraft</li>
+                        </ul>
+                        }
+                    }
+                    else
+                    {
+                        <p>Niste odabrali povratni let !</p>
+                    }
+            </div>
+            <hr />
+            </div>
+        }
+    </div>
+</div>
+
+

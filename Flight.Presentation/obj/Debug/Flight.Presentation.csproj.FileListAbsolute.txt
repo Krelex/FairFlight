@@ -20,7 +20,6 @@ C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Entity
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\EntityFramework.SqlServer.dll
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Flight.DAL.dll
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Flight.Model.dll
-C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Flight.Service.dll
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\IO.Swagger.dll
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Microsoft.AI.DependencyCollector.dll
@@ -63,7 +62,6 @@ C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\RestSh
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\IO.Swagger.pdb
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Flight.DAL.pdb
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Flight.Model.pdb
-C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Flight.Service.pdb
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\AutoMapper.pdb
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\AutoMapper.xml
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Microsoft.AI.DependencyCollector.xml
@@ -109,3 +107,5 @@ C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\obj\Debug\
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\obj\Debug\Flight.Presentation.pdb
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\log4net.dll
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\log4net.xml
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Flight.BLL.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Presentation\bin\Flight.BLL.pdb

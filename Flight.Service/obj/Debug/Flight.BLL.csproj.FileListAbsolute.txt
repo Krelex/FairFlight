@@ -1,5 +1,3 @@
-C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\bin\Debug\Flight.Service.dll
-C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\bin\Debug\Flight.Service.pdb
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\bin\Debug\AutoMapper.dll
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\bin\Debug\Flight.DAL.dll
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\bin\Debug\Flight.Model.dll
@@ -18,5 +16,7 @@ C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\bin\Debug\Newto
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\bin\Debug\RestSharp.xml
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\bin\Debug\EntityFramework.xml
 C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\obj\Debug\Flight.BLL.csprojResolveAssemblyReference.cache
-C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\obj\Debug\Flight.Service.dll
-C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\obj\Debug\Flight.Service.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\bin\Debug\Flight.BLL.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\bin\Debug\Flight.BLL.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\obj\Debug\Flight.BLL.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Service\obj\Debug\Flight.BLL.pdb

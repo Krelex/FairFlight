@@ -1,0 +1,5 @@
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Model\bin\Release\Flight.Model.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Model\bin\Release\Flight.Model.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Model\obj\Release\Flight.Model.csprojResolveAssemblyReference.cache
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Model\obj\Release\Flight.Model.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Model\obj\Release\Flight.Model.pdb
