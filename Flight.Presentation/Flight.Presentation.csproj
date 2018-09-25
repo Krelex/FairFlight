@@ -279,19 +279,18 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\List.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\View.cshtml" />
     <Content Include="Views\Shared\FlightTablePartialView.cshtml" />
     <Content Include="Views\Shared\SearchPartialView.cshtml" />
-    <Content Include="Views\GlobalError\Index.cshtml" />
+    <Content Include="Views\GlobalError\Error.cshtml" />
     <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\GlobalError\NotFound.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Infrastructure\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -307,7 +306,7 @@
       <Name>IO.Swagger</Name>
     </ProjectReference>
     <ProjectReference Include="..\Flight.DAL\Flight.DAL.csproj">
-      <Project>{BE0A1E88-DEA5-46F1-B547-924859988133}</Project>
+      <Project>{be0a1e88-dea5-46f1-b547-924859988133}</Project>
       <Name>Flight.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Flight.Model\Flight.Model.csproj">

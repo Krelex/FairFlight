@@ -36,27 +36,35 @@ namespace Flight.Presentation.Controllers
         [HttpPost]
         public ActionResult List(SearchViewModel search)
         {
-            ViewBag.Currency =_service.GetCurrency();
-
-            if (!ModelState.IsValid)
+            try
             {
-                return View("index");
+                ViewBag.Currency = _service.GetCurrency();
+
+                if (!ModelState.IsValid)
+                {
+                    return View("index");
+                }
+
+                var responeSearchParamters = SearchViewModelToSearchResponeModel(search);
+                FlightSearchResponeDTO respone;
+
+                if (_service.FindRespone(responeSearchParamters))
+                {
+                    respone = _service.GetRespone(responeSearchParamters);
+                }
+                else
+                {
+                    var ApiRespone = _service.GetApiRespone(responeSearchParamters);
+                    respone = _service.SaveRespone(ApiRespone);
+                }
+
+                return View("List", respone);
             }
-
-            var responeSearchParamters = SearchViewModelToSearchResponeModel(search);
-            FlightSearchResponeDTO respone;
-
-            if (_service.FindRespone(responeSearchParamters))
+            catch (IO.Swagger.Client.ApiException)
             {
-                respone = _service.GetRespone(responeSearchParamters);
+                return RedirectToAction("NotFound", "GlobalError");
             }
-            else
-            {
-                var ApiRespone = _service.GetApiRespone(responeSearchParamters);
-                respone = _service.SaveRespone(ApiRespone);      
-            }
-
-            return View("List", respone);
+      
         }
 
         public ActionResult Details(int ResultId, string Currency)

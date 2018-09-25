@@ -46,7 +46,7 @@
                 @if(itenery.Inbound != null)
                 {
                     <p>Ukupno trajanje leta : @itenery.Inbound.Duration h</p>
-                    <p>Broj presjedanja : @itenery.Inbound.Flights.Count-1</p>
+                    <p>Broj presjedanja : @(itenery.Inbound.Flights.Count-1)</p>
                     foreach (var flight in itenery.Inbound.Flights)
                     {
                         <ul class="list-group">

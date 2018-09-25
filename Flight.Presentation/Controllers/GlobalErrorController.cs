@@ -9,7 +9,12 @@ namespace Flight.Presentation.Controllers
     public class GlobalErrorController : Controller
     {
         // GET: GlobalError
-        public ActionResult Index()
+        public ActionResult Error()
+        {
+            return View();
+        }
+
+        public ActionResult NotFound()
         {
             return View();
         }

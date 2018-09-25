@@ -38,8 +38,6 @@ namespace Flight.Presentation.DependencyResolution {
             For<IFlightService>().Use<FlightService>();
             For<IFlightRepository>().Use<DAL.Repository.FlightResponeRepository>();
             For<IDefaultApi>().Use<DefaultApi>().Ctor<string>("basePath").Is("https://api.sandbox.amadeus.com/v1.2");
-
-
         }
 
         #endregion

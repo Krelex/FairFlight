@@ -25,15 +25,15 @@ namespace Flight.Presentation
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
-        //protected void Application_Error(object sender, EventArgs e)
-        //{
-        //    Exception ex = Server.GetLastError();
+        protected void Application_Error(object sender, EventArgs e)
+        {
+            Exception ex = Server.GetLastError();
 
-        //    Log.Error(sender, ex);
+            Server.ClearError();
 
-        //    Server.ClearError();
+            Log.Error(sender, ex);
 
-        //    Response.Redirect("~/GlobalError/Index");
-        //}
+            Response.Redirect("~/GlobalError/Error");
+        }
     }
 }
