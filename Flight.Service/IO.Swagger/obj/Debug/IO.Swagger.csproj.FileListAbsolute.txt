@@ -1,0 +1,9 @@
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Debug\IO.Swagger.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Debug\IO.Swagger.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Debug\JsonSubTypes.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Debug\Newtonsoft.Json.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Debug\RestSharp.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Debug\Newtonsoft.Json.xml
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Debug\RestSharp.xml
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\obj\Debug\IO.Swagger.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\obj\Debug\IO.Swagger.pdb

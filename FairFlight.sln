@@ -16,9 +16,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LowFlight.Model", "LowFligh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.Model", "Flight.Model\Flight.Model.csproj", "{A409AD2B-6E38-4D61-B179-675E1115C4EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.BLL", "Flight.Service\Flight.BLL.csproj", "{A1396205-663B-4B49-B5C9-85260F57C43F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.BLL", "Flight.BLL\Flight.BLL.csproj", "{A1396205-663B-4B49-B5C9-85260F57C43F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO.Swagger", "Flight.BLL\src\IO.Swagger\IO.Swagger.csproj", "{C73AD888-C2E8-4C73-B91D-80FCB4CE093A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO.Swagger", "Flight.Service\IO.Swagger\IO.Swagger.csproj", "{C73AD888-C2E8-4C73-B91D-80FCB4CE093A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

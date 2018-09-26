@@ -302,9 +302,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Flight.BLL\src\IO.Swagger\IO.Swagger.csproj">
-      <Project>{C73AD888-C2E8-4C73-B91D-80FCB4CE093A}</Project>
-      <Name>IO.Swagger</Name>
+    <ProjectReference Include="..\Flight.BLL\Flight.BLL.csproj">
+      <Project>{a1396205-663b-4b49-b5c9-85260f57c43f}</Project>
+      <Name>Flight.BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Flight.DAL\Flight.DAL.csproj">
       <Project>{be0a1e88-dea5-46f1-b547-924859988133}</Project>
@@ -314,9 +314,9 @@
       <Project>{a409ad2b-6e38-4d61-b179-675e1115c4ef}</Project>
       <Name>Flight.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Flight.Service\Flight.BLL.csproj">
-      <Project>{a1396205-663b-4b49-b5c9-85260f57c43f}</Project>
-      <Name>Flight.BLL</Name>
+    <ProjectReference Include="..\Flight.Service\IO.Swagger\IO.Swagger.csproj">
+      <Project>{c73ad888-c2e8-4c73-b91d-80fcb4ce093a}</Project>
+      <Name>IO.Swagger</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

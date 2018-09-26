@@ -1,0 +1,10 @@
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Release\IO.Swagger.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Release\IO.Swagger.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Release\JsonSubTypes.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Release\Newtonsoft.Json.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Release\RestSharp.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Release\Newtonsoft.Json.xml
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\bin\Release\RestSharp.xml
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\obj\Release\IO.Swagger.csprojResolveAssemblyReference.cache
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\obj\Release\IO.Swagger.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.BLL\src\IO.Swagger\obj\Release\IO.Swagger.pdb
