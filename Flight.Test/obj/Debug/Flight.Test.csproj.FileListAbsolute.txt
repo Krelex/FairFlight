@@ -1,0 +1,8 @@
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Test\bin\Debug\Flight.Test.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Test\bin\Debug\Flight.Test.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Test\obj\Debug\Flight.Test.csprojResolveAssemblyReference.cache
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Test\obj\Debug\Flight.Test.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Test\obj\Debug\Flight.Test.pdb
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Test\bin\Debug\Flight.Model.dll
+C:\Users\andre\Desktop\King_Projekt\csharp-client\Flight.Test\bin\Debug\Flight.Model.pdb
