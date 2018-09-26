@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
 using AutoMapper;
 using IO.Swagger.Model;
-using Flight.Model;
-using System.Linq.Expressions;
-using System.Globalization;
 
-namespace Flight.Service.Mapper
+namespace Flight.BLL.Mapper
 {
     public class AutomapperProfile : Profile
     {

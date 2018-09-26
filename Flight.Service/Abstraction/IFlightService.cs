@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Flight.Service.Abstraction
+namespace Flight.BLL.Abstraction
 {
     public interface IFlightService 
     {

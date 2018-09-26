@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AutoMapper;
 
-namespace Flight.Service.Mapper
+namespace Flight.BLL.Mapper
 {
     public class DateTimeTypeConverter : ITypeConverter<string, DateTime>
     {

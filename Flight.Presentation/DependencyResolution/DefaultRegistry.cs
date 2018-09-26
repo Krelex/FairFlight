@@ -18,8 +18,8 @@
 namespace Flight.Presentation.DependencyResolution {
     using DAL.Abstraction;
     using IO.Swagger.Api;
-    using Service.Abstraction;
-    using Service.Concrete;
+    using BLL.Abstraction;
+    using BLL.Concrete;
     using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
 

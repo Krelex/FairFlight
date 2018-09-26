@@ -1,4 +1,4 @@
-﻿using Flight.Service.Abstraction;
+﻿using Flight.BLL.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using Flight.DAL.Abstraction;
 using IO.Swagger.Api;
 using System.Configuration;
 
-namespace Flight.Service.Concrete
+namespace Flight.BLL.Concrete
 {
     public class FlightService : IFlightService
     {

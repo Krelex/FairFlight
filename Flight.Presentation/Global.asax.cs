@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Flight.Service.Mapper;
 using log4net;
 using System.Reflection;
+using Flight.BLL.Mapper;
 
 namespace Flight.Presentation
 {
