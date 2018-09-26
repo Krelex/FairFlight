@@ -13,11 +13,11 @@ namespace Flight.Service.Concrete
 {
     public class FlightService : IFlightService
     {
-        private IFlightRepository _iFlightServiceRepository;
-        private IDefaultApi _ApiClient;
+        private readonly IFlightRepository _iFlightServiceRepository;
+        private readonly IDefaultApi _ApiClient;
 
         //Here place your api key.
-        string apiKey = ConfigurationManager.AppSettings["apiKey"];
+        private readonly string _apiKey = ConfigurationManager.AppSettings["apiKey"];
 
 
         public FlightService(IFlightRepository repo  ,IDefaultApi api )
@@ -61,7 +61,7 @@ namespace Flight.Service.Concrete
         public FlightSearchResponeDTO GetApiRespone(FlightSearchResponeDTO viewRespone)
         {
 
-            var apiRespone = _ApiClient.FlightLowFareSearch(apiKey, viewRespone.Origin, viewRespone.Destination, viewRespone.DepartureDate.ToString("yyyy-MM-dd"),
+            var apiRespone = _ApiClient.FlightLowFareSearch(_apiKey, viewRespone.Origin, viewRespone.Destination, viewRespone.DepartureDate.ToString("yyyy-MM-dd"),
                                                             viewRespone.ReturnDate?.ToString("yyyy-MM-dd"), null, null, viewRespone.Adults, viewRespone.Childs, null, null, null, null,
                                                             null, viewRespone.Currency);
 

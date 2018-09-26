@@ -10,7 +10,7 @@ namespace Flight.DAL.Repository
 {
     public class FlightResponeRepository : IFlightRepository
     {
-        private FlightContex _contex = new FlightContex();
+        private readonly FlightContex _contex = new FlightContex();
 
         public FlightSearchResponeDTO GetRespone(FlightSearchResponeDTO respone)
         {
